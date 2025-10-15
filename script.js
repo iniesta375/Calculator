@@ -10,7 +10,7 @@ const multiply = () => {
 const divide = () => {
     console.log(firstNumber.value);
     console.log(secondNumber.value);
-    const answer = firstNumber.value / secondNumber.value
+    const answer = (firstNumber.value / secondNumber.value).toFixed(2)
     console.log(answer);
     showResult.innerHTML = answer
     
