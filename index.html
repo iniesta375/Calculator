@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alata Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <main class="d-flex w-100 align-items-center  px-3 justify-content-center" style="height: 98vh;">
+
+        <div class="card col-12 col-lg-4 d-flex align-items-center flex-column justify-content-center gap-3 p-0"
+            style="box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);  height: fit-content;">
+
+            <p class="w-75 text-center pt-3 fs- fs-lg-" style="font-size: 3rem; line-height: 48px;">Inioluwa's Mini Calculator</p>
+
+            <input class="text-center w-75 rounded-1 py-2" autofocus id="firstNumber" type="text" value=""
+                placeholder="first number" style="border: 1px solid rgb(186, 185, 185);">
+            <input class="text-center w-75 rounded-1 py-2" id="secondNumber" type="text" value=""
+                placeholder="second number" style="border: 1px solid rgb(186, 185, 185);">
+
+            <div class="d-flex flex-column justify-content-center text-center align-items-center gap-2">
+
+                <div>
+                    <button class="w-25 bg-secondary-subtle rounded-2 text-center py-1 fs-2 px-5" style="border: 1px solid rgb(186, 185, 185);" onclick="multiply()">*</button>
+                    <button class="w-25 bg-secondary-subtle rounded-2 text-center py-1 fs-2 px-5" style="border: 1px solid rgb(186, 185, 185);" onclick="divide()">/</button>
+                </div>
+
+                <div>
+                    <button class="w-25 bg-secondary-subtle rounded-2 text-center py-2 fs-2 px-5" style="border: 1px solid rgb(186, 185, 185);" onclick="add()">+</button>
+                    <button class="w-25 bg-secondary-subtle rounded-2 text-center py-2 fs-2 px-5" style="border: 1px solid rgb(186, 185, 185);" onclick="subtract()">-</button>
+                </div>
+
+                <div class="card text-center fs-5 px-5 pt-2 mb-4">
+                    <p id="showResult"> = </p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
